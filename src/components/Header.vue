@@ -6,10 +6,13 @@
             <div class="jumbotron">
                 <!-- Nav bar -->
                 <div class="container">
-                    <nav class="menu">
-                        <div class="logo">NEXGEN</div>
+                    <nav class="header_menu">
+                        <div class="logo">
+                            <!-- COMPONENTE LOGO -->
+                            <HeaderLogo />
+                        </div>
                         <div class="nav_menu">
-                            <ul>
+                            <ul class="nav_links">
                                 <li>
                                     <a href="#">HOME</a>
                                 </li>
@@ -31,20 +34,35 @@
                             </ul>
                         </div>
                     </nav>
+                    <!-- end header menu -->
+                    <div class="logistic_wrapper">
+                        <div class="logistic_title">
+                                <h1><span>Logistics</span> that goes further.</h1>
+                            <div class="logistic_description">
+                                For 20 years working with the most innovative in the field of transport.
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
+                <!-- end container -->
             </div>
+            <!-- end jumbotron -->
         </section>
     </header>
 </template>
 
 <script>
 import HeaderTop from "./HeaderTop.vue";
+import HeaderLogo from "./HeaderLogo.vue";
+
 
 
 export default {
     name:'Header',
     components:{
         HeaderTop,
+        HeaderLogo,
     },
 }
 </script>
@@ -60,28 +78,62 @@ export default {
     background-image:url('../assets/img/jumbo.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0.5);
+    filter: brightness(0.8);
 
-        .menu{
+        .header_menu{
             width:100%;
             // test
-            height: 100px;
-            background-color: khaki;
+            height: 90px;
             display: flex;
+            color: white;
             .logo{
                 width:40%;
+                height: inherit;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
             .nav_menu{
                 width: 60%;
                 height: inherit;
-                ul{
+                .nav_links{
                     display: flex;
                     height: inherit;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                 }
 
             }
+        }
+        // HEADER BOTTOM
+        .logistic_wrapper{
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+                .logistic_title{
+                    width: 35%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+
+                    h1{
+                        font-size: 75px;
+                        color: white;
+                        
+                        span{
+
+                            text-decoration:underline;
+                            text-decoration-color: $brand_primary_button;
+                            text-decoration-thickness: 10px;
+                        }
+                    }
+                    .logistic_description{
+                        font-size: 25px;
+                        color: #b7b9c6;
+                        margin:25px 0;
+                    }
+                }
         }
 }
 

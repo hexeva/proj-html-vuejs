@@ -50,7 +50,7 @@ export default {
 
 
 .top_page{
-    background-color:#293c4c;
+    background-color:#21333e;
     width: 100%;
     height: 40px;
     color: white;
