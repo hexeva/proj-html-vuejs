@@ -8,12 +8,14 @@
 .icons{
     width: 10px;
 }
+// BUTTONS
 
 .main_btn{
     padding: 14px 28px;
     background-color:$brand_primary_button;
     color: white;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
 .empty_btn{
@@ -21,4 +23,19 @@
     border: 1px solid $brand_primary_button;
     color: white;
     border-radius: 5px;
+    text-transform: uppercase;
 }
+.section_btn{
+    padding:8px 12px;
+    background-color:$brand_section_button;
+    color:$brand_primary_color;
+    border-radius: 5px;
+    margin-right:16px;
+}
+
+
+
+.cols{
+    width:calc(100% / 3);
+}
+
