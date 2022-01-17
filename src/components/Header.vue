@@ -1,9 +1,22 @@
 <template>
-    <header>Componente Header</header>
+    <header>
+        <HeaderTop />
+    </header>
 </template>
 
 <script>
+import HeaderTop from "./HeaderTop.vue";
+
+
 export default {
     name:'Header',
+    components:{
+        HeaderTop,
+    },
 }
 </script>
+
+<style lang="scss" scoped>
+@import '../style/variables.scss';
+
+</style>
