@@ -41,6 +41,10 @@
                             <div class="logistic_description">
                                 For 20 years working with the most innovative in the field of transport.
                             </div>
+                            <div class="logistic_buttons">
+                                <a class="main_btn" href="#">GET IN TOUCH</a>
+                                <a class="empty_btn" href="#">READ MORE</a>
+                            </div>
                         </div>
                         
                     </div>
@@ -74,11 +78,11 @@ export default {
 .jumbotron{
     width:100%;
     // test
-    height: 590px;
+    height: 750px;
     background-image:url('../assets/img/jumbo.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0.8);
+    filter: brightness(0.9);
 
         .header_menu{
             width:100%;
@@ -114,11 +118,11 @@ export default {
                 .logistic_title{
                     width: 35%;
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    top: 90px;
+                    right: 100px;
 
                     h1{
-                        font-size: 75px;
+                        font-size: 70px;
                         color: white;
                         
                         span{
@@ -133,8 +137,16 @@ export default {
                         color: #b7b9c6;
                         margin:25px 0;
                     }
+
+                    .logistic_buttons{
+                        margin: 55px 0;
+                        a{
+                            margin-right:20px;
+                        }
+                    }
                 }
         }
+        // end wrapper
 }
 
 

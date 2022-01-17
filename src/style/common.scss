@@ -1,3 +1,4 @@
+@import './variables.scss';
 .container{
     width:70%;
     height: 100%;
@@ -6,4 +7,18 @@
 
 .icons{
     width: 10px;
+}
+
+.main_btn{
+    padding: 14px 28px;
+    background-color:$brand_primary_button;
+    color: white;
+    border-radius: 5px;
+}
+
+.empty_btn{
+    padding: 14px 20px;
+    border: 1px solid $brand_primary_button;
+    color: white;
+    border-radius: 5px;
 }
