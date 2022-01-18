@@ -154,6 +154,9 @@
             <!-- NEWSLETTERS -->
             <Newsletters />
             <!-- END NEWSLETTERS -->
+            <!-- MESSAGEBOX SECTION -->
+            <Messagebox />
+            <!-- END MESSAGE BOX SECTION -->
     </main>
     <!-- END MAIN -->
 </template>
@@ -161,12 +164,14 @@
 <script>
 import DotDecoration from './DotDecoration.vue';
 import Newsletters from './Newsletters.vue';
+import Messagebox from './Messagebox.vue';
 
 export default {
     name:'Main',
     components:{
         DotDecoration,
         Newsletters,
+        Messagebox,
     },
 }
 </script>

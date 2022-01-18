@@ -103,3 +103,15 @@
     top: 43px;
     left: -10px;
 }
+
+// FORMS
+.form_style{
+    padding:13px 170px 13px 13px;
+    border-radius: 5px;
+    margin: 10px;
+    border:none;
+    font-size: 18px;
+    background-color: $brand_forms;
+    color: $brand_secondary_text;
+
+}
