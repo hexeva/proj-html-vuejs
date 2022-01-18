@@ -49,6 +49,8 @@
         <!-- END FIRST SECTION -->
         <!-- SECOND SECTION -->
         <section class="section_about">
+            <!-- component -->
+            <DotDecoration class="up" />
             <div class="company">
                 <div class="company_info">
                     <h5>about the network</h5>
@@ -86,7 +88,7 @@
             <div class="company_img">
                 <img src="../assets/img/about-5.jpg" alt="skygrape img">
             </div>
-
+            <DotDecoration class="down" />
         </section>
         <!-- END SECOND SECTION -->
     </main>
@@ -94,10 +96,15 @@
 </template>
 
 <script>
+import DotDecoration from './DotDecoration.vue';
 export default {
     name:'Main',
+    components:{
+        DotDecoration,
+    },
 }
 </script>
+
 
 <style lang="scss" scoped>
 @import '../style/variables.scss';
@@ -168,6 +175,7 @@ export default {
         width:100%;
         height: 950px;
         display:flex;
+        position: relative;
         
         .company{
             width:45%;
