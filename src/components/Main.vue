@@ -338,12 +338,14 @@ export default {
                 background-repeat: no-repeat;
                 border-radius: 10px;
                 overflow: hidden;
-                filter: brightness(0.7);
+                
                 .card_title{
                     color: white;
                     font-size: 24px;
                     text-align: center;
                     padding-top:302px;
+                    height: 100%;
+                    backdrop-filter:brightness(0.5);
                 }
             }
             .left{

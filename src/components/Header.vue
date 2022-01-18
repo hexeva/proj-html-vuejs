@@ -5,49 +5,51 @@
         <section>
             <div class="jumbotron">
                 <!-- Nav bar -->
-                <div class="container">
-                    <nav class="header_menu">
-                        <div class="logo">
-                            <!-- COMPONENTE LOGO -->
-                            <HeaderLogo />
-                        </div>
-                        <div class="nav_menu">
-                            <!-- componente? -->
-                            <ul class="nav_links">
-                                <li>
-                                    <a href="#">HOME</a>
-                                </li>
-                                <li>
-                                    <a href="#">SERVICES</a>
-                                </li>
-                                <li>
-                                    <a href="#">SKILLS</a>
-                                </li>
-                                <li>
-                                    <a href="#">PARTNERS</a>
-                                </li>
-                                <li>
-                                    <a href="#">BLOG</a>
-                                </li>
-                                <li>
-                                    <a href="#">GET IN TOUCH</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- end header menu -->
-                    <div class="logistic_wrapper">
-                        <div class="logistic_title">
-                                <h1><span>Logistics</span> that goes further.</h1>
-                            <div class="logistic_description">
-                                For 20 years working with the most innovative in the field of transport.
+                <div class="jumbotron_filter">
+                    <div class="container">
+                        <nav class="header_menu">
+                            <div class="logo">
+                                <!-- COMPONENTE LOGO -->
+                                <HeaderLogo />
                             </div>
-                            <div class="logistic_buttons">
-                                <a class="main_btn" href="#">GET IN TOUCH</a>
-                                <a class="empty_btn" href="#">READ MORE</a>
+                            <div class="nav_menu">
+                                <!-- componente? -->
+                                <ul class="nav_links">
+                                    <li>
+                                        <a href="#">HOME</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SERVICES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">SKILLS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PARTNERS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">BLOG</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GET IN TOUCH</a>
+                                    </li>
+                                </ul>
                             </div>
+                        </nav>
+                        <!-- end header menu -->
+                        <div class="logistic_wrapper">
+                            <div class="logistic_title">
+                                    <h1><span>Logistics</span> that goes further.</h1>
+                                <div class="logistic_description">
+                                    For 20 years working with the most innovative in the field of transport.
+                                </div>
+                                <div class="logistic_buttons">
+                                    <a class="main_btn" href="#">GET IN TOUCH</a>
+                                    <a class="empty_btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                            
                         </div>
-                        
                     </div>
                 </div>
                 <!-- end container -->
@@ -83,7 +85,11 @@ export default {
     background-image:url('../assets/img/jumbo.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0.9);
+        .jumbotron_filter{
+            width: 100%;
+            height: 100%;
+            backdrop-filter: brightness(0.5);
+        }
 
         .header_menu{
             width:100%;

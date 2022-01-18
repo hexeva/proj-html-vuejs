@@ -13,6 +13,7 @@
                 <div class="newsletter_form">
                         <input type="text" id="Name" name="Name" placeholder="Name"><br>
                         <input type="email" id="email" name="email" placeholder="Email">
+                        <a class="main_btn" href="#">Subscribe</a>
                 </div>
             </div>
         </div>
@@ -45,6 +46,7 @@ export default {
             align-items: center;
             .newsletters_titles{
                 width: 50%;
+                margin-right: 20px;
                 h5{
                     margin: 35px 0;
                 }
@@ -54,12 +56,17 @@ export default {
                 width: 50%;
                 
                 input{
-                    padding:13px 280px 13px 4px;
-                    margin: 10px 0;
+                    padding:13px 250px 13px 13px;
+                    margin-bottom: 34px;
                     border-radius:5px;
                     box-shadow: none;
-                    background-color:#8e8f91;
+                    background-color:$brand_forms;
+                    color: #787591;
+                    font-size: 18px;
+                    filter:opacity(0.8);
+                    border: none;
                 }
+                
             }
         }
     }
