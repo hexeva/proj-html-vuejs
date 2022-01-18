@@ -83,7 +83,9 @@
                     </div>
                 </div>
             </div>
-            <div class="company_img">COMPANY img</div>
+            <div class="company_img">
+                <img src="../assets/img/about-5.jpg" alt="skygrape img">
+            </div>
 
         </section>
         <!-- END SECOND SECTION -->
@@ -164,12 +166,13 @@ export default {
     // SECOND SECTION
     .section_about{
         width:100%;
+        height: 950px;
         display:flex;
         
         .company{
             width:45%;
             height: 100%;
-            padding: 120px 0;
+            padding: 100px 0;
             background-color: $brand_background_second;
             color:$brand_primary_text;
             display: flex;
@@ -204,9 +207,11 @@ export default {
             }
             
         }
+        // END COMPANY
         .company_img{
-            width: 50%;
+            width: 55%;
             height: 100%;
+            overflow: hidden;
         }
     }
     // END SECOND SECTION
