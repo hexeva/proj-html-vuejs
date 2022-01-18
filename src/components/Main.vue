@@ -46,7 +46,49 @@
                 
             </div>
         </section>
+        <!-- END FIRST SECTION -->
+        <!-- SECOND SECTION -->
+        <section class="section_about">
+            <div class="company">
+                <div class="company_info">
+                    <h5>about the network</h5>
+                    <div class="special_titles">
+                        <span class="special_text">the</span>
+                        Company
+                    </div>
+                    <p>With all of this expertise and capability comes an unrivalled commitment to customer service.</p>
+                    <!-- SINGLE PERCENTAGE -->
+                    <div class="company_percentages">
+                        <div class="single_percentage">
+                            <div class="percent">0<span>%</span></div>
+                            <div class="percentage_info">
+                                <h3>Leadership</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="single_percentage">
+                            <div class="percent">0<span>%</span></div>
+                            <div class="percentage_info">
+                                <h3>Psycology</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="single_percentage">
+                            <div class="percent one">1<span>%</span></div>
+                            <div class="percentage_info">
+                                <h3>Flexibility</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="company_img">COMPANY img</div>
+
+        </section>
+        <!-- END SECOND SECTION -->
     </main>
+    <!-- END MAIN -->
 </template>
 
 <script>
@@ -79,10 +121,6 @@ export default {
             .logistic{
                 padding-right:20px;
                 
-                h5{
-                    text-transform: uppercase;
-                    color:$brand_special_text;
-                }
                 h2{
                     margin: 30px 0;
                     font-size:45px;
@@ -118,10 +156,61 @@ export default {
                         }
                     }
                 }
-                // end card
+         // end card
         }
-
     }
+    // END FIRST SECTION
+
+    // SECOND SECTION
+    .section_about{
+        width:100%;
+        display:flex;
+        
+        .company{
+            width:45%;
+            height: 100%;
+            padding: 120px 0;
+            background-color: $brand_background_second;
+            color:$brand_primary_text;
+            display: flex;
+            justify-content: flex-end;
+            .company_info{
+                width: 60%;
+                height: inherit;
+               h5{
+                   margin: 35px 0;
+               }
+               p{
+                   margin: 35px 0;
+                   color: $brand_secondary_text;
+               }
+               .single_percentage{
+                   display: flex;
+                   height: 110px;
+                   margin: 70px 0;
+                   p{
+                       margin: 0;
+                       color: $brand_secondary_text;
+                   }
+                   .percentage_info{
+                       padding-top:7px;
+                       h3{
+                           font-size: 25px;
+                           margin-bottom: 25px;
+                       }
+                   }
+
+               }
+            }
+            
+        }
+        .company_img{
+            width: 50%;
+            height: 100%;
+        }
+    }
+    // END SECOND SECTION
+
 
 
 </style>

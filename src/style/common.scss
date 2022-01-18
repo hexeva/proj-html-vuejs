@@ -33,10 +33,48 @@
     margin-right:16px;
 }
 
-
-
 .cols{
     width:35%;
     
 }
 
+// TITLES
+.special_titles{
+    color: $brand_primary_text;
+    font-size: 45px;
+    font-weight: 700;
+}
+.special_text{
+    background-color: $brand_special_titles;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.percent{
+    font-size: 25px;
+    width: 125px;
+    height: 108px;
+    font-weight: 700;
+    color: #c0c3d0;
+    border-radius: 50%;
+    border: 10px solid #232328;
+    text-align: center;
+    line-height: 84px;
+    margin-right: 35px;
+    position: relative;
+    span{
+        font-size: 15px;
+    }
+}
+
+.one::before{
+    content: "";
+    height: 2px;
+    background-color:$brand_special_text;
+    width: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 43px;
+    left: -10px;
+}
