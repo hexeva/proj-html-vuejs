@@ -134,7 +134,21 @@
                             <a class="main_btn" href="">see all</a>
                         </div>
                     </div>
+                    <!-- EDITORIAL CARDS -->
+                    <div class="card_wrapper">
+                        <!-- single card -->
+                        <div class="editorial_card left">
+                            <div class="card_title">Increasing creativity is possible for everyone</div>
+                        </div>
+                        <div class="editorial_card center">
+                            <div class="card_title">Increasing creativity is possible for everyone</div>
+                        </div>
+                        <div class="editorial_card right">
+                            <div class="card_title">Increasing creativity is possible for everyone</div>
+                        </div>
+                    </div>
                 </div>
+                <!-- end container -->
             </section>
             <!-- END EDITORIAL SECTION -->
     </main>
@@ -155,7 +169,6 @@ export default {
 <style lang="scss" scoped>
     @import '../style/variables.scss';
     @import '../style/common.scss';
-
 
 
     .contents{
@@ -290,20 +303,54 @@ export default {
         background-color: white;
         width: 100%;
         padding: 120px 0;
+        
 
         .content_wrapper{
             display: flex;
+            margin-bottom: 30px;
             .news{
                 width:80%;
                 padding:30px 0;
-                
-               
             }
             .news_btn{
                 width:20%;
                 text-align: right;
                 padding-top:177px;
-              
+            }
+        }
+        // editorial cards
+        .card_wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .editorial_card{
+                width:calc((100% / 3) - 20px);
+                // test
+                height: 400px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                overflow: hidden;
+                filter: brightness(0.7);
+                .card_title{
+                    color: white;
+                    font-size: 24px;
+                    text-align: center;
+                    padding-top:302px;
+                }
+            }
+            .left{
+                background-image: url("../assets/img/news-1.jpg");
+
+            }
+            .center{
+                background-image: url("../assets/img/news-2.jpg");
+
+            }
+            .right{
+                background-image: url("../assets/img/news-3.jpg");
+
             }
         }
     }
