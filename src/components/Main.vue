@@ -151,16 +151,22 @@
                 <!-- end container -->
             </section>
             <!-- END EDITORIAL SECTION -->
+            <!-- NEWSLETTERS -->
+            <Newsletters />
+            <!-- END NEWSLETTERS -->
     </main>
     <!-- END MAIN -->
 </template>
 
 <script>
 import DotDecoration from './DotDecoration.vue';
+import Newsletters from './Newsletters.vue';
+
 export default {
     name:'Main',
     components:{
         DotDecoration,
+        Newsletters,
     },
 }
 </script>
