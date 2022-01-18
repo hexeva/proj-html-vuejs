@@ -20,8 +20,28 @@
 
                         </div>
                     </div>
-                    <div class="technology cols">TECNOLOGY</div>
-                    <div class="transport cols">TRANSPORT</div>
+                    <div class="technology cols">
+                        <div class="custom_card">
+                            <div class="img_card">
+                                <img src="../assets/img/gallery-3.jpg" alt="statistic app img">
+                            </div>
+                            <div class="card_content">
+                                <h3>Technology</h3>
+                                <p>Focused on developing technology solutions adapted to our clien's needs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transport cols">
+                        <div class="custom_card">
+                            <div class="img_card">
+                                <img src="../assets/img/gallery-5.jpg" alt="package img">
+                            </div>
+                            <div class="card_content">
+                                <h3>Transport</h3>
+                                <p>We develop operational strategies to improv logistical efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -44,19 +64,20 @@ export default {
     .contents{
         width:100%;
         background-color: $brand_background_color;
-        padding: 50px 0;
-        // test
-        height: 800px;
+        padding-top:50px;
+        padding-bottom: 100px;
+        
         p{
             color:$brand_secondary_text;
         }
 
         .services{
             display: flex;
-            padding: 10px 0;
+            padding: 70px 0;
+            justify-content: space-between;
 
             .logistic{
-                padding-right:95px;
+                padding-right:20px;
                 
                 h5{
                     text-transform: uppercase;
@@ -64,21 +85,42 @@ export default {
                 }
                 h2{
                     margin: 30px 0;
-                    font-size:40px;
+                    font-size:45px;
                 }
 
                 .qualities{
-                    margin: 30px 0;
+                    margin-top:40px;
                     .info_service{
-                        margin: 40px 0;
+                        margin-top:40px;
                     }
                 }
-
-                
             }
+            .technology{
+                margin: 0 30px;
+            }
+             // CUSTOM CARDS
+            .custom_card{
+                    width:100%;
+                    height: 100%;
+                    background-color: white;
+                    border-radius: 10px;
+                    padding: 50px 15px;
+                    .img_card{
+                        width: 70%;
+                        margin: auto;
+                    }
+                    .card_content{
+                        width: 70%;
+                        margin: auto;
+                        h3{
+                            font-size:25px;
+                            margin:25px 0;
+                        }
+                    }
+                }
+                // end card
         }
 
-       
     }
 
 

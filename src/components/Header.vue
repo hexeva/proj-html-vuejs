@@ -12,6 +12,7 @@
                             <HeaderLogo />
                         </div>
                         <div class="nav_menu">
+                            <!-- componente? -->
                             <ul class="nav_links">
                                 <li>
                                     <a href="#">HOME</a>
