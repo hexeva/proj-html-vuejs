@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header />
+    <Header :navMenu="navData" />
     <Main />
     <Footer :sectionOne="firstSection" :sectionTwo="secondSection" :sectionThree="thirdSection" />
 
@@ -24,6 +24,27 @@ export default {
   },
   data:function(){
     return{
+      // HEADER'S DATA
+      navData:[
+        {
+          name:'HOME',
+          href:'/#',
+        },
+         {
+          name:'SERVICES',
+          href:'/#',
+        },
+         {
+          name:'SKILLS',
+          href:'/#',
+        },
+         {
+          name:'BLOG',
+          href:'/#',
+        },
+        
+      ],
+      // FOOTER'S DATA
       firstSection:{
         title:"About",
         links:[

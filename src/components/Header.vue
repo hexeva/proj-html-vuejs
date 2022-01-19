@@ -15,23 +15,11 @@
                             <div class="nav_menu">
                                 <!-- componente? -->
                                 <ul class="nav_links">
-                                    <li>
-                                        <a href="#">HOME</a>
+                                    <li v-for="(search,index) in navMenu" :key="index">
+                                        <a :href="search.href">{{search.name}}</a>
                                     </li>
-                                    <li>
-                                        <a href="#">SERVICES</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">SKILLS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">PARTNERS</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">BLOG</a>
-                                    </li>
-                                    <li>
-                                        <a class="main_btn" href="#">GET IN TOUCH</a>
+                                    <li >
+                                        <a class="main_btn" href="#">get in touch</a>
                                     </li>
                                 </ul>
                             </div>
@@ -75,6 +63,9 @@ export default {
     components:{
         HeaderTop,
         Logo,
+    },
+    props:{
+        navMenu:Array,
     },
 }
 </script>
