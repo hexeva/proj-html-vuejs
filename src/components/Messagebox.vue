@@ -24,7 +24,7 @@
                                 <input class="message_area" type="text" placeholder="Message">
                             </div>
                         </form>
-                        <button class="main_btn">send</button>
+                        <a class="main_btn" href="#">send</a>
                     </div>
                     <!-- end forms -->
                 </div>
@@ -135,7 +135,7 @@ export default {
     .area_container{
         width: 100%;
         padding-right: 49px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
         
     }
 
