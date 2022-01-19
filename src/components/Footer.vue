@@ -26,7 +26,6 @@
                         </div>
                     </div>
                             <a class="empty_btn" href="#">get in touch</a>
-
                 </div>
                 <div class="info-row">
                     <!-- first section -->
@@ -53,16 +52,28 @@
                             </ul>
                         </div>
                     </div>
-                    
                     <!-- third section -->
                     <div class="footer-card">
-                        <h3>SUPPORT</h3>
+                        <div class="filter-wrapper">
+                            <h3>{{this.sectionThree.title}}</h3>
+                            <ul>
+                                <li v-for="(link,index) in sectionThree.links" :key="index">
+                                    <span class="card-icons"><i class="fas fa-chevron-right"></i></span>
+                                    <a :href="link.href">{{link.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="end-credits">
+                <div>Enjoy the low price.We are tracking any intention of piracy.</div>
+                <div>
+                    <i class="far fa-copyright"></i> 2020 NEXGEN is Proudly Powered by <span>Codings</span>
                 </div>
             </div>
         </div>
         <!-- end container -->
-
     </footer>
 </template>
 
@@ -88,16 +99,16 @@ export default {
 @import '../style/variables.scss';
 .jumbotron{
     width:100%;
-    // test
-    height: 720px;
     background-image: url('../assets/img/bg-10.jpg');
     background-position: center;
     background-size: cover;
+    padding-top:50px;
+       
 
     .content_wrapper{
         width: 100%;
         padding: 100px 0;
-        color:$brand_secondary_color;
+        color:$brand_primary_text;
         display: flex;
       
         .footer-contacts{
@@ -128,7 +139,7 @@ export default {
             .footer-card{
                 width:calc((100% / 3) - 18px);
                 height: 100%;
-                 background: rgba(80, 81, 86, 0.3);
+                 background: rgba(80, 81, 86, 0.2);
                  border-radius:10px;
                  padding: 45px 40px;
                  h3{
@@ -152,6 +163,17 @@ export default {
                 
                 
             }
+        }
+    }
+    .end-credits{
+        color:#c0c3d0;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top:50px;
+        padding-bottom: 10px;
+        span{
+            color: $brand_special_text;
         }
     }
 }

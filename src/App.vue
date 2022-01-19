@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Main />
-    <Footer :sectionOne="firstSection" :sectionTwo="secondSection" />
+    <Footer :sectionOne="firstSection" :sectionTwo="secondSection" :sectionThree="thirdSection" />
 
   </div>
 </template>
