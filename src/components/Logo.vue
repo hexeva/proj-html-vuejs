@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name:'HeaderLogo',
+    name:'Logo',
 }
 </script>
 
@@ -19,7 +19,7 @@ export default {
 @import '../style/variables.scss';
 
 .nexgen{
-    width: 150px;
+    width: 170px;
     height: 50px;
     text-transform: uppercase;
     font-size: 20px;

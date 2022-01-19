@@ -10,7 +10,7 @@
                         <nav class="header_menu">
                             <div class="logo">
                                 <!-- COMPONENTE LOGO -->
-                                <HeaderLogo />
+                                <Logo />
                             </div>
                             <div class="nav_menu">
                                 <!-- componente? -->
@@ -66,7 +66,7 @@
 
 <script>
 import HeaderTop from "./HeaderTop.vue";
-import HeaderLogo from "./HeaderLogo.vue";
+import Logo from "./Logo.vue";
 
 
 
@@ -74,7 +74,7 @@ export default {
     name:'Header',
     components:{
         HeaderTop,
-        HeaderLogo,
+        Logo,
     },
 }
 </script>

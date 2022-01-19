@@ -41,7 +41,7 @@
                         </div>
                          <div class="single_contact">
                             <span class="round_icons">
-                               <i class="fas fa-map-marker-alt"></i>
+                               <i class="fas fa-envelope"></i>
                             </span>
                             <a href="#">hello@example.com</a>
                         </div>
@@ -53,7 +53,6 @@
                         </div>
                         <div class="contact_btn">
                             <a class="empty_btn" href="#">wiew map</a>
-
                         </div>
                     </div>
                 </div>
