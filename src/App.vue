@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
     <Main />
-    <Footer />
+    <Footer :sectionOne="firstSection" :sectionTwo="secondSection" />
 
   </div>
 </template>
@@ -21,7 +21,101 @@ export default {
     Header,
     Main,
     Footer,
-    
+  },
+  data:function(){
+    return{
+      firstSection:{
+        title:"About",
+        links:[
+          {
+            name:'The Company',
+            href:"/#"
+          },
+          {
+            name:'Institutional',
+            href:'/#',
+          },
+          {
+            name:'Social & Events',
+            href:'/#',
+          },
+          {
+            name:'Innovation',
+            href:'/#',
+          },
+          {
+            name:'Envirovment',
+            href:'/#',
+          },
+          {
+            name:'Technology',
+            href:'/#',
+          },
+        ],
+      },
+      // end first section
+      secondSection:{
+        title:"Transport",
+        links:[
+          {
+            name:'Industrialized',
+            href:"/#"
+          },
+          {
+            name:'Chemicals',
+            href:'/#',
+          },
+          {
+            name:'Packaged Liquids',
+            href:'/#',
+          },
+          {
+            name:'Construction',
+            href:'/#',
+          },
+          {
+            name:'Laminated Wood',
+            href:'/#',
+          },
+          {
+            name:'And others',
+            href:'/#',
+          },
+        ],
+      },
+      // END SECOND SECTION
+      // THIRD SECTION
+       thirdSection:{
+        title:"Support",
+        links:[
+          {
+            name:'Responsability',
+            href:"/#"
+          },
+          {
+            name:'Terms of Use',
+            href:'/#',
+          },
+          {
+            name:'About Cookies',
+            href:'/#',
+          },
+          {
+            name:'Privacy Policy',
+            href:'/#',
+          },
+          {
+            name:'Accessibility',
+            href:'/#',
+          },
+          {
+            name:'Information',
+            href:'/#',
+          },
+        ],
+      },
+    }
+    // end return
   },
 };
 </script>

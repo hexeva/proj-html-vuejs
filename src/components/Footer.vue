@@ -29,21 +29,32 @@
 
                 </div>
                 <div class="info-row">
-                    <!-- qui ci andranno le cards  -->
+                    <!-- first section -->
                     <div class="footer-card">
                         <div class="filter-wrapper">
-                            <h3>ABOUT</h3>
+                            <h3>{{this.sectionOne.title}}</h3>
                             <ul>
-                                <li>
+                                <li v-for="(link,index) in sectionOne.links" :key="index">
                                     <span class="card-icons"><i class="fas fa-chevron-right"></i></span>
-                                    <a href="#">The company</a>
+                                    <a :href="link.href">{{link.name}}</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="footer-card">
-                        <h3>TRANSPORT</h3>
+                    <!-- second section -->
+                     <div class="footer-card">
+                        <div class="filter-wrapper">
+                            <h3>{{this.sectionTwo.title}}</h3>
+                            <ul>
+                                <li v-for="(link,index) in sectionTwo.links" :key="index">
+                                    <span class="card-icons"><i class="fas fa-chevron-right"></i></span>
+                                    <a :href="link.href">{{link.name}}</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    
+                    <!-- third section -->
                     <div class="footer-card">
                         <h3>SUPPORT</h3>
                     </div>
@@ -64,6 +75,11 @@ export default {
     components:{
         Logo,
     },
+    props:{
+        sectionOne:Object,
+        sectionTwo:Object,
+        sectionThree:Object,
+    },
 }
 
 </script>
@@ -80,12 +96,10 @@ export default {
 
     .content_wrapper{
         width: 100%;
-        height: 100%;
         padding: 100px 0;
-        color:$brand_secondary_text;
+        color:$brand_secondary_color;
         display: flex;
-        // test
-        border: 1px solid white;
+      
         .footer-contacts{
             width: 25%;
             height:100%;
@@ -114,19 +128,22 @@ export default {
             .footer-card{
                 width:calc((100% / 3) - 18px);
                 height: 100%;
-                 background: rgba(80, 81, 86, 0.5);
+                 background: rgba(80, 81, 86, 0.3);
                  border-radius:10px;
-                 padding: 40px 20px;
+                 padding: 45px 40px;
                  h3{
                      color: white;
                      margin-bottom: 30px;
+                     font-size: 23px;
                  }
-                // test
-                border: 1px solid red;
+                 li{
+                     margin-bottom: 18px;
+                 }
+             
                 .filter-wrapper{
                     width:100%;
                     height: 100%;
-                    backdrop-filter:opacity(0.6);
+                    
                 }
 
                 .card-icons{
