@@ -9,10 +9,10 @@
                         <h2>Logistic Services</h2>
                         <p class="paragraph">We are leaders in providing logistic services with a set of cutting edge technologies and a team of experienced and renowned professionals</p>
                         <div class="qualities">
-                            <!-- sono pulsanti? -->
-                            <a class="section_btn" href="#">Tradition</a>
-                            <a class="section_btn" href="#">Quality</a>
-                            <a class="section_btn" href="#">Security</a>
+                            
+                            <span class="special_tag">Tradition</span>
+                            <span class="special_tag">Quality</span>
+                            <span class="special_tag">Security</span>
 
                             <div class="info_service">
                                 <a class="main_btn" href="#">READ MORE</a>
