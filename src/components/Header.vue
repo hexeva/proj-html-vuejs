@@ -31,7 +31,7 @@
                                         <a href="#">BLOG</a>
                                     </li>
                                     <li>
-                                        <a href="#">GET IN TOUCH</a>
+                                        <a class="main_btn" href="#">GET IN TOUCH</a>
                                     </li>
                                 </ul>
                             </div>
@@ -39,7 +39,12 @@
                         <!-- end header menu -->
                         <div class="logistic_wrapper">
                             <div class="logistic_title">
-                                    <h1><span>Logistics</span> that goes further.</h1>
+                                    <div class="lined_title">
+                                        <div class="filter_wrapper">
+                                            <div class="special_title">Logistics</div>
+                                        </div>
+                                    </div>
+                                    <div class="title">that goes further.</div>
                                 <div class="logistic_description">
                                     For 20 years working with the most innovative in the field of transport.
                                 </div>
@@ -127,18 +132,33 @@ export default {
                     position: absolute;
                     top: 90px;
                     right: 100px;
+                        .lined_title{
+                            width: 87%;
+                            height: 35px;
+                            position: relative;
+                            background-color: $brand_primary_color;
+                            .filter_wrapper{
+                                width: 100%;
+                                height: 100%;
+                                backdrop-filter: opacity(0.7);
 
-                    h1{
-                        font-size: 70px;
-                        color: white;
-                        
-                        span{
-
-                            text-decoration:underline;
-                            text-decoration-color: $brand_primary_button;
-                            text-decoration-thickness: 10px;
+                            }
+                            .special_title{
+                                font-size: 72px;
+                                font-weight: 900;
+                                color:white;
+                                position: absolute;
+                                top: -47px;
+                                left: -3px;
+                            }
                         }
-                    }
+                        .title{
+                            font-size: 72px;
+                            font-weight:900;
+                            color:white;
+                        }
+                   
+
                     .logistic_description{
                         font-size: 25px;
                         color: #b7b9c6;
