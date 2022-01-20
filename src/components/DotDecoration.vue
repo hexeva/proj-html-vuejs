@@ -76,7 +76,7 @@ export default {
                 background-color:$brand_decorations;
                 border-radius: 50%;
                 display: inline-block;
-                filter: opacity(0.7);
+                filter: opacity(0.5);
             }
         }
 }
